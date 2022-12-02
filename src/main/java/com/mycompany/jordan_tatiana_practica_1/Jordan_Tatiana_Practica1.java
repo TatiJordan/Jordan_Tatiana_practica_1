@@ -13,6 +13,15 @@ public class Jordan_Tatiana_Practica1 {
         return potencia;
         
     }//Potencias de dos
+    
+    private static boolean bitDependiente (int bitRed, int bitMsj, int[] codigo ){
+        
+        boolean bitDepende = false;
+        if((potenciaDeDos(bitMsj, codigo) == false) && ((bitMsj & bitRed) == bitRed) && ( bitRed != bitMsj)) 
+            bitDepende = true;
+        return bitDepende;
+    }//Bit dependiente.
+    
     public static void main(String[] args) {
         
         //creacion del mensaje
