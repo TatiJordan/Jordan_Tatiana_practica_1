@@ -27,5 +27,15 @@ public class Jordan_Tatiana_Practica1 {
         //Array con el mensaje mas los bits paridad y el global.
         int[] codigo = new int[msj.length + bParidad + 1];
         int i2 = 0;
+        
+        //Meter el mensaje en el hueco indicado.
+        for (int i = 1; i < codigo.length; i++) {
+            if (potenciaDeDos(i, codigo) == false) {
+                codigo[i] = msj[i2];
+                i2++;
+            }//if
+        }//for
+        
+        
     }//main
 }//Practica 1
