@@ -11,5 +11,9 @@ public class Jordan_Tatiana_Practica1 {
         for (int i = 0; Math.pow(2, i) < msj.length + bParidad + 1; i++) {
             bParidad++;
         }//for
+        
+        //Array con el mensaje mas los bits paridad y el global.
+        int[] codigo = new int[msj.length + bParidad + 1];
+        int i2 = 0;
     }//main
 }//Practica 1
