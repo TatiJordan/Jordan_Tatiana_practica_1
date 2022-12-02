@@ -67,6 +67,13 @@ public class Jordan_Tatiana_Practica1 {
             bitRed++;
         }//while
         
+        //Rellenar bit global:
+        int contador2 = 0;
+        for(int i = 1; i < codigo.length;i++){
+            if(codigo[i] == 1)
+                contador2++;
+        }//for
+        codigo[0] = contador2 % 2;
         
     }//main
 }//Practica 1
