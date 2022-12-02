@@ -45,6 +45,28 @@ public class Jordan_Tatiana_Practica1 {
             }//if
         }//for
         
+        int contador = 0;
+        int bitRed = 1;
+        int bitMsj = 1;
+        
+        //rellenar los bits de redundancia:
+        while(bitRed < codigo.length){ //Este recorre los bits de redundancia
+            if (potenciaDeDos(bitRed, codigo) == true) {
+                while(bitMsj < codigo.length){//Este recorre los bits de mensaje
+                    if (bitDependiente(bitRed, bitMsj, codigo) == true) {
+                        if (codigo[bitMsj] == 1) {
+                            contador++;
+                        }//if
+                    }//if
+                   bitMsj++;
+                }//while
+                codigo[bitRed] = contador % 2;
+                contador = 0; 
+                 bitMsj = 1;
+            }//if
+            bitRed++;
+        }//while
+        
         
     }//main
 }//Practica 1
