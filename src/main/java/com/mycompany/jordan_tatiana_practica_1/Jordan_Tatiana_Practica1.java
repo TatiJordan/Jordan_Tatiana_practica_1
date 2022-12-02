@@ -1,6 +1,18 @@
 package com.mycompany.jordan_tatiana_practica_1;
 
 public class Jordan_Tatiana_Practica1 {
+    public static boolean potenciaDeDos(int posicion, int[] codigo){
+        //para encontrar la posicion del array.
+        boolean potencia = false;
+        for (int i = 0; i < codigo.length; i++){
+            if (Math.pow(2, i) == posicion){
+                potencia = true;
+            }//if
+        }//for
+        
+        return potencia;
+        
+    }//Potencias de dos
     public static void main(String[] args) {
         
         //creacion del mensaje
