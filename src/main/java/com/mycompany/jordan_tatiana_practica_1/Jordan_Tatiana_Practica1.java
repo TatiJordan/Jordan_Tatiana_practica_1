@@ -22,6 +22,13 @@ public class Jordan_Tatiana_Practica1 {
         return bitDepende;
     }//Bit dependiente.
     
+    private static void mostrarArray(int[] array){
+        for(int i = 0; i < array.length; i++){
+           System.out.print(array[i] + " ");
+        }//for
+        System.out.println();
+    }//Mostrar el array
+    
     public static void main(String[] args) {
         
         //creacion del mensaje
@@ -74,6 +81,6 @@ public class Jordan_Tatiana_Practica1 {
                 contador2++;
         }//for
         codigo[0] = contador2 % 2;
-        
+        mostrarArray(codigo);
     }//main
 }//Practica 1
